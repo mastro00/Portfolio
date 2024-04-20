@@ -1,0 +1,27 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #f0f0f0;
+    padding-top: 20px;
+}
+
+.nav {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav li {
+    padding: 10px;
+}
+
+.nav li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.nav li a:hover {
+    color: #555;
+}
