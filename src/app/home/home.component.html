@@ -1,19 +1,30 @@
+<div class="general">
+    
+<div class="board">
 <div class="title">
     <div class="row">
         <div class="col-xs-12">
-            <h1>Welcome</h1>
+            <h2>Welcome</h2>
         </div>
     </div>
 </div>
 
-<div>
+<div class="text">
     <p>Hello! <br>i'm Mastrangelo Giovanni</p>
     <p>I'm a junior developer constantly looking for projects that stimulate my personal growth, 
         I invite you to look at the rest of my experience
     </p>
+</div>
     <hr>
-    <button type="button" class="btn btn-primary" (click)="seeMore()">See more</button>
-    <button type="button" class="btn btn-primary">Hire me</button>
+    <div id="buttons">
+        <button type="button"  (click)="seeMore('about')">See more</button>
+        <button type="button" (click)="seeMore('contacts')">Hire me</button>
+    </div>
+    
+
+</div>
+<div class="image">
+    <img src="assets/img/profile.png">
 </div>
 
-<img src="assets/img/profile.png">
+</div>

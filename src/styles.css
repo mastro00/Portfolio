@@ -1,9 +1,9 @@
 html {
-    height: 100%;
+    min-height: 100%;
 }
 
 body {
-    height: 100%;
+    min-height: 100%;
 }
 
 :root {
@@ -14,6 +14,6 @@ body {
     --color5: #EB7F00;
 }
 
-h1, h2, h3 {
+/* h1, h2, h3 {
     color: var(--color5)!important;
-}
+} */

@@ -1,3 +1,63 @@
+.general {
+    display: flex;
+}
 .title {
     text-align: center;
+}
+
+.image {
+    position: absolute;
+    top: 50.5%;
+    left: 80%;
+}
+
+
+div h2 {
+    font-size: 24px;
+  color: #333;
+  font-weight: bold;
+}
+.text {
+    background-color: #cbcbb3
+
+}
+
+.text p {
+    font-size: 16px;
+    color: black;
+    line-height: 1.5;
+}
+
+.board {
+    padding: 5%;
+    width: 90%;
+    height: 90%;
+    border: 2px groove black;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
+    border-radius: 10px;
+    background-color: transparent;
+    margin: 5%;
+}
+
+button {
+    margin: 10%;
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 10px;
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.icons {
+    display: flex;
+    justify-content: end;
+}
+
+.icons i{
+    padding: 10px;
 }

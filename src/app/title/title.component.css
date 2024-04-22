@@ -1,0 +1,37 @@
+h1 {
+    background-color: rgb(25, 25, 25);
+    display: flex;
+    display: inline-block;
+}
+
+h1 {
+    color: transparent;
+    -webkit-text-stroke: 3px darkmagenta;
+    position: relative;
+    font-size: 70px;
+}
+h1::before {
+    content: "Portfolio";
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    overflow: hidden;
+    color: darkmagenta;
+    
+    transition: 1s ease-in-out;
+}
+
+h1:hover::before{
+    width: 100%;
+    filter: drop-shadow(0 0 25px darkmagenta);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header.position {
+    justify-content: right;
+}
