@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class SidebarComponent {
 
+   show= true;
+
+  showButton(){
+    this.show = !this.show
+  }
+
+
 }

@@ -1,17 +1,44 @@
-<!-- <div class="sidebar">
-    <ul class="nav">
-        <li routerLinkActive="active"><a routerLink="/" style="cursor: pointer;">Home</a></li>
-        <li routerLinkActive="active"><a routerLink="/about" style="cursor: pointer;">About</a></li>
-        <li routerLinkActive="active"><a routerLink="/career" style="cursor: pointer;">Career</a></li>
-    </ul>
-</div> -->
+<div class="sidebar">
+  <button (click)="showButton()"><i class="fa-solid fa-bars"></i></button>
+  <ul class="pages " [ngClass]="{ reduced: !show }">
+    <li routerLinkActive="active">
+      <a routerLink="/" style="cursor: pointer">
+        <div>
+          <i class="fa-solid fa-house"></i>
+        </div>
+        <span> Home </span>
+      </a>
+    </li>
 
+    <li routerLinkActive="active">
+      <a routerLink="/about" style="cursor: pointer">
+        <div><i class="fas fa-info-circle"></i></div>
+        <span> About </span>
+      </a>
+    </li>
 
-<nav class="navbar navbar-default">
+    <li routerLinkActive="active">
+      <a routerLink="/career" style="cursor: pointer">
+        <div>
+          <i class="fas fa-briefcase"> </i>
+        </div>
+        <span> Career </span>
+      </a>
+    </li>
+
+    <li routerLinkActive="active">
+      <a routerLink="/contacts" style="cursor: pointer">
+        <div><i class="fas fa-address-book"></i></div>
+        <span> Contacts </span></a>
+    </li>
+  </ul>
+</div>
+
+<!-- <nav class="navbar navbar-default">
     <div class="container-fluid">
       <div class="navbar-header">
         <li routerLinkActive="active"><a routerLink="/" style="cursor: pointer;">Home</a></li>
         <li routerLinkActive="active"><a routerLink="/about" style="cursor: pointer;">About</a></li>
         <li routerLinkActive="active"><a routerLink="/career" style="cursor: pointer;">Career</a></li>
         <li routerLinkActive="active"><a routerLink="/contacts" style="cursor: pointer;">contacts</a></li>
-</div>
+</div> -->

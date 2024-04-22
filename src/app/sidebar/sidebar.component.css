@@ -1,27 +1,68 @@
-.sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 200px;
-    height: 100%;
-    background-color: #f0f0f0;
-    padding-top: 20px;
-}
-
-.nav {
+.pages {
     list-style-type: none;
     padding: 0;
 }
 
-.nav li {
-    padding: 10px;
-}
-
-.nav li a {
+.pages li a {
     text-decoration: none;
     color: #333;
 }
 
-.nav li a:hover {
+.pages li a:hover {
     color: #555;
+}
+
+.pages.reduced span{
+    display: none;
+}
+
+.sidebar{
+    display: flex;
+    flex-direction:column;
+    padding: 20px;
+    border-right: 1px solid black;
+    height: 100%;
+}
+
+.sidebar > button:nth-child(1) {
+    width: 40px;
+    height: auto;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: none;
+}
+
+.sidebar > button:nth-child(1) #hamburger{
+    width: 20px;
+    height: auto;
+    aspect-ratio: 1/1;
+    display: flex;
+}
+
+.sidebar i {
+    font-size: 20px;
+    display: flex;
+}
+
+.sidebar li > a > div:has(i){
+    width: 40px;
+    height: auto;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar li > a {
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+}
+
+.sidebar span {
+    display: flex;
+    align-items: center;
 }
