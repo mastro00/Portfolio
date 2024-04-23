@@ -45,12 +45,19 @@ button {
     padding-left: 50px;
     padding-right: 50px;
     border-radius: 10px;
+    transition: 0.5s;
 }
+
+button:hover {
+    letter-spacing: 0.25em;
+    background-color: var(--color6);
+    box-shadow: 0 0 35px var(--color6)
+}
+
 
 #buttons {
     display: flex;
     justify-content: center;
-    
 }
 
 .icons {

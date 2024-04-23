@@ -1,0 +1,33 @@
+.contacts {
+    display: flex;
+    flex-direction: column;
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.linkedin, .github {
+    border: 1px solid black;
+    display: inline-block;
+    width: fit-content;
+    
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+i {
+    color: inherit;
+}
+
+.groups {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

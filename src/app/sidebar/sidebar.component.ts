@@ -7,7 +7,9 @@ import { Component } from '@angular/core';
 })
 export class SidebarComponent {
 
+  count = 0;
    show= true;
+   showTooltip = false;
 
   showButton(){
     this.show = !this.show

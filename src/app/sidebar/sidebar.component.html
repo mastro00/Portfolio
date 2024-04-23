@@ -1,5 +1,9 @@
 <div class="sidebar">
-  <button (click)="showButton()"><i class="fa-solid fa-bars"></i></button>
+  <button  (mouseover)="this.showTooltip = true" (mouseout)="this.showTooltip = false" (click)="showButton()">
+    <i [ngClass]="show ? 'fa-solid fa-circle-arrow-left' : 'fa-solid fa-circle-arrow-right'"></i></button>
+    <span *ngIf="showTooltip">
+      {{ show ? 'Collapse sidebar' : 'Open sidebar' }}
+    </span>
   <ul class="pages " [ngClass]="{ reduced: !show }">
     <li routerLinkActive="active">
       <a routerLink="/" style="cursor: pointer">
