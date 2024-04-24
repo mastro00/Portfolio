@@ -1,6 +1,7 @@
-.contacts {
+app-contacts {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .group {
@@ -10,11 +11,21 @@
     justify-content: center;
 }
 
-.linkedin, .github {
+
+.social {
     border: 1px solid black;
-    display: inline-block;
+    display: flex;
     width: fit-content;
-    
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.social:hover {
+    background-color: #333;
+    color: black;
+}
+.linkedinIcon, .githubIcon {
+    padding: 20px;
 }
 
 a {
@@ -30,4 +41,13 @@ i {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.prova {
+    align-items: center;
+}
+
+hr {
+    border-top: 2px solid black;
+    width: 100%;
 }

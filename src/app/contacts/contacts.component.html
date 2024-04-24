@@ -1,17 +1,24 @@
-<div class="groups">
 <div class="group">
-    <div class="linkedin">
-        <a href="#" (click)="redirectContacts('https://www.linkedin.com/in/giovanni-mastrangelo-8a8893240?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BDTPLn001TByyGX2pfyGP%2Bg%3D%3D')">Linkedin
-           <div class="linkedin"><i class="fab fa-linkedin"></i></div> 
-        </a>
-    </div>
-</div> 
+    <div
+      class="social"
+      (click)="
+        redirectContacts(
+          'https://www.linkedin.com/in/giovanni-mastrangelo-8a8893240?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BDTPLn001TByyGX2pfyGP%2Bg%3D%3D'
+        )
+      "
+    >
+      <span>Linkedin</span>
 
-<div class="group">
-    <div class="github">
-        <a href="#" (click)="redirectContacts('https://github.com/mastro00')">GitHub
-            <div class="github"><i class="fab fa-github"></i></div>
-        </a>
+      <div class="linkedinIcon"><i class="fab fa-linkedin"></i></div>
     </div>
-</div>
-</div>
+  </div>
+  <hr>
+  <div class="group">
+    <div
+      class="social"
+      (click)="redirectContacts('https://github.com/mastro00')"
+    >
+      <span>GitHub</span>
+      <div class="githubIcon"><i class="fab fa-github"></i></div>
+    </div>
+  </div>

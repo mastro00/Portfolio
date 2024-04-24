@@ -17,14 +17,16 @@
 }
 
 .sidebar{
-    display: flex;
-    flex-direction:column;
+    /* display: flex;
+    flex-direction:column; */
+    display: grid;
+    grid-template-rows: 1fr auto 1fr;
     padding: 20px;
     border-right: 1px solid black;
     height: 100%;
 }
 
-.sidebar > button:nth-child(1) {
+.sidebar #scrollButton {
     width: 40px;
     height: auto;
     aspect-ratio: 1/1;
@@ -33,6 +35,8 @@
     align-items: center;
     border-radius: 50%;
     border: none;
+    position: relative;
+    transform: translate(41px, 0px);
 }
 
 .sidebar > button:nth-child(1) #hamburger{
