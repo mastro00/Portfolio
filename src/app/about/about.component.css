@@ -1,3 +1,79 @@
 .icons i span{
     display: flex;
 }
+
+.order {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+}
+
+img {
+    width: 600px;
+    height: auto;
+    padding-right: 10px;
+}
+
+
+
+.paragraph {
+    display: flex;
+    flex-direction: column;
+}
+
+.linkSections {
+    display: flex;
+    flex-direction: column;
+}
+
+.linkSections h2 {
+    display: flex;
+    justify-content: center;
+}
+
+#recipe {
+    background-image: url('https://i1.wp.com/potafiori.com/wp-content/uploads/2020/04/placeholder.png?ssl=1');
+    width: 350px;
+    height: 250px;
+    border: 1px solid black;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    transition: width 0.3s, height 0.3s;
+    cursor: pointer;
+}
+
+#recipe:hover {
+    width: 370px;
+    height: 270px;
+}
+
+#wip {
+    background-image: url('https://i.pinimg.com/originals/72/66/03/7266036c9f3383d21730484150602f01.gif');
+    width: 350px;
+    height: 250px;
+    border: 1px solid black;
+    background-size: cover;
+    background-position: center;
+    color: black;
+    overflow: hidden;
+    transition: width 0.3s, height 0.3s;
+    cursor: pointer;
+}
+
+#wip:hover {
+    width: 370px;
+    height: 270px;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-bottom: 30px;
+}
+
+a {
+    display: flex;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+}

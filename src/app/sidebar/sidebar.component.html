@@ -35,9 +35,17 @@
   </ul>
 
   <div class="flex jr">
-    <button  id="scrollButton" title="{{ show ? 'Collapse sidebar' : 'Open sidebar' }}" (mouseover)="this.showTooltip = true" (mouseout)="this.showTooltip = false" (click)="showButton()">
-      <i [ngClass]="show ? 'fa-solid fa-circle-arrow-left' : 'fa-solid fa-circle-arrow-right'"></i></button>
+    <button id="scrollButton" 
+            [title]="show ? 'Collapse sidebar' : 'Open sidebar'"
+            (click)="showButton()"
+            (mouseenter)="showTooltip = true"
+            (mouseleave)="showTooltip = false">
+      <i [ngClass]="show ? 'fa-solid fa-circle-arrow-left' : 'fa-solid fa-circle-arrow-right'"></i>
+    </button>
+    <span class="tooltip" *ngIf="showTooltip">{{ show ? 'Collapse sidebar' : 'Open sidebar' }}</span>
   </div>
+  
+  
   
     <div></div>
 

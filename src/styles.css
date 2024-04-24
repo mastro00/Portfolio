@@ -114,3 +114,8 @@ app-contacts {
     height: 100%;
     justify-content: center;
 }
+
+app-about {
+    display: flex;
+    flex-direction: column;
+}

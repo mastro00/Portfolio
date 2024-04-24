@@ -1,5 +1,4 @@
 h1 {
-    background-color: rgb(25, 25, 25);
     display: flex;
     display: inline-block;
 }
@@ -9,6 +8,7 @@ h1 {
     -webkit-text-stroke: 3px darkmagenta;
     position: relative;
     font-size: 70px;
+    cursor: pointer;
 }
 h1::before {
     content: "Portfolio";

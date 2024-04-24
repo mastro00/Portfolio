@@ -1,0 +1,9 @@
+div h1 {
+    display: flex;
+    justify-content: center ;
+}
+
+.workingCareer {
+    display: grid;
+    grid-row: 1fr 1fr 1fr;
+}

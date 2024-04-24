@@ -75,4 +75,24 @@
     
     justify-content: end;
 }
+
+.tooltip {
+    position: absolute;
+    visibility: hidden;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    transition: opacity 0.3s;
+    /* left: calc(100% + 5px);
+    top: 50%;
+    transform: translateY(-50%); */
+  }
+  
+  #scrollButton:hover + .tooltip {
+    visibility: visible;
+    opacity: 1;
+  }
+  
   
