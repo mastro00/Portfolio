@@ -1,4 +1,5 @@
-<div class="header">
-    <h1>Portfolio</h1>
-    <app-position></app-position>
+<h1>Portfolio</h1>
+<div class="position flex gap10 ac">
+  <i [ngClass]="getIcon()"></i>
+  <span>{{ getName() }}</span>
 </div>

@@ -1,3 +1,12 @@
+i {
+    font-size: 20px;
+    display: flex;
+}
+
+
+
+
+/* Lista pagine (ul) */
 .pages {
     list-style-type: none;
     padding: 0;
@@ -6,27 +15,44 @@
 .pages li a {
     text-decoration: none;
     color: #333;
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
 }
 
 .pages li a:hover {
     color: #555;
 }
 
-.pages.reduced span{
+.pages li > a > div:has(i){
+    width: 40px;
+    height: auto;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pages li span {
+    display: flex;
+    align-items: center;
+}
+
+.pages.reduced li span{
     display: none;
 }
 
-.sidebar{
-    /* display: flex;
-    flex-direction:column; */
-    display: grid;
-    grid-template-rows: 1fr auto 1fr;
-    padding: 20px;
-    border-right: 1px solid black;
-    height: 100%;
+
+
+/* freccia della sidebar */
+.scrollDiv {
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    transform: translate(0px, -50%);
 }
 
-.sidebar #scrollButton {
+.scrollDiv #scrollButton {
     width: 40px;
     height: auto;
     aspect-ratio: 1/1;
@@ -35,64 +61,27 @@
     align-items: center;
     border-radius: 50%;
     border: none;
-    position: relative;
-    transform: translate(41px, 0px);
 }
 
-.sidebar > button:nth-child(1) #hamburger{
-    width: 20px;
-    height: auto;
-    aspect-ratio: 1/1;
-    display: flex;
-}
 
-.sidebar i {
-    font-size: 20px;
-    display: flex;
-}
 
-.sidebar li > a > div:has(i){
-    width: 40px;
-    height: auto;
-    aspect-ratio: 1/1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.sidebar li > a {
-    display: flex;
-    width: 100%;
-    flex-wrap: nowrap;
-}
-
-.sidebar span {
-    display: flex;
-    align-items: center;
-}
-
-.directions {
-    
-    justify-content: end;
-}
-
-.tooltip {
-    position: absolute;
-    visibility: hidden;
+/* span della freccia */
+.scrollDiv .buttonTitle {
+    display: none;
     background-color: black;
     color: white;
     padding: 5px;
     border-radius: 5px;
     font-size: 12px;
     transition: opacity 0.3s;
-    /* left: calc(100% + 5px);
-    top: 50%;
-    transform: translateY(-50%); */
+    height: fit-content;
+    text-wrap: nowrap;
+    position: absolute;
+    left: 30px;
+    bottom: 25px;
   }
   
-  #scrollButton:hover + .tooltip {
-    visibility: visible;
+  .scrollDiv:hover .buttonTitle {
+    display: block;
     opacity: 1;
   }
-  
-  

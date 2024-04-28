@@ -1,61 +1,49 @@
-<div class="sidebar">
-  
+<ul class="pages" [ngClass]="{ reduced: !show }">
+  <li routerLinkActive="active">
+    <a routerLink="/" style="cursor: pointer">
+      <div>
+        <i class="fa-solid fa-house"></i>
+      </div>
+      <span> Home </span>
+    </a>
+  </li>
 
-  <ul class="pages " [ngClass]="{ reduced: !show }">
-    <li routerLinkActive="active">
-      <a routerLink="/" style="cursor: pointer">
-        <div>
-          <i class="fa-solid fa-house"></i>
-        </div>
-        <span> Home </span>
-      </a>
-    </li>
+  <li routerLinkActive="active">
+    <a routerLink="/about" style="cursor: pointer">
+      <div><i class="fas fa-info-circle"></i></div>
+      <span> About </span>
+    </a>
+  </li>
 
-    <li routerLinkActive="active">
-      <a routerLink="/about" style="cursor: pointer">
-        <div><i class="fas fa-info-circle"></i></div>
-        <span> About </span>
-      </a>
-    </li>
+  <li routerLinkActive="active">
+    <a routerLink="/career" style="cursor: pointer">
+      <div>
+        <i class="fas fa-briefcase"> </i>
+      </div>
+      <span> Career </span>
+    </a>
+  </li>
 
-    <li routerLinkActive="active">
-      <a routerLink="/career" style="cursor: pointer">
-        <div>
-          <i class="fas fa-briefcase"> </i>
-        </div>
-        <span> Career </span>
-      </a>
-    </li>
+  <li routerLinkActive="active">
+    <a routerLink="/contacts" style="cursor: pointer">
+      <div><i class="fas fa-address-book"></i></div>
+      <span> Contacts </span></a
+    >
+  </li>
+</ul>
 
-    <li routerLinkActive="active">
-      <a routerLink="/contacts" style="cursor: pointer">
-        <div><i class="fas fa-address-book"></i></div>
-        <span> Contacts </span></a>
-    </li>
-  </ul>
-
-  <div class="flex jr">
-    <button id="scrollButton" 
-            [title]="show ? 'Collapse sidebar' : 'Open sidebar'"
-            (click)="showButton()"
-            (mouseenter)="showTooltip = true"
-            (mouseleave)="showTooltip = false">
-      <i [ngClass]="show ? 'fa-solid fa-circle-arrow-left' : 'fa-solid fa-circle-arrow-right'"></i>
-    </button>
-    <span class="tooltip" *ngIf="showTooltip">{{ show ? 'Collapse sidebar' : 'Open sidebar' }}</span>
-  </div>
-  
-  
-  
-    <div></div>
-
+<div class="flex jl scrollDiv">
+  <button
+    id="scrollButton"
+    (click)="showButton()">
+    <i
+      [ngClass]="
+        show
+          ? 'fa-solid fa-circle-arrow-left'
+          : 'fa-solid fa-circle-arrow-right'
+      "
+    ></i>
+  </button>
+  <!-- <span class="tooltip" *ngIf="showTooltip">{{ show ? 'Collapse sidebar' : 'Open sidebar' }}</span> -->
+  <span class="buttonTitle">{{ show ? 'Collapse sidebar' : 'Open sidebar' }}</span>
 </div>
-
-<!-- <nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <li routerLinkActive="active"><a routerLink="/" style="cursor: pointer;">Home</a></li>
-        <li routerLinkActive="active"><a routerLink="/about" style="cursor: pointer;">About</a></li>
-        <li routerLinkActive="active"><a routerLink="/career" style="cursor: pointer;">Career</a></li>
-        <li routerLinkActive="active"><a routerLink="/contacts" style="cursor: pointer;">contacts</a></li>
-</div> -->

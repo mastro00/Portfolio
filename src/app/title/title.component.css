@@ -32,6 +32,6 @@ h1:hover::before{
     justify-content: space-between;
 }
 
-.header.position {
-    justify-content: right;
+.position {
+    font-size: 30px;
 }

@@ -10,7 +10,6 @@ import { CareerComponent } from './career/career.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { TitleComponent } from './title/title.component';
-import { PositionComponent } from './position/position.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +21,6 @@ import { PositionComponent } from './position/position.component';
     PageNotFoundComponent,
     ContactsComponent,
     TitleComponent,
-    PositionComponent
   ],
   imports: [
     BrowserModule,

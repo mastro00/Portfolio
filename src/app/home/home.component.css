@@ -40,6 +40,10 @@ div h2 {
 }
 
 button {
+    border-style: dashed;
+    border-width: 20px;
+    border-color: black;
+    border-image: url('stripe.png') 2 round;
     margin: 10%;
     padding: 10px;
     padding-left: 50px;
