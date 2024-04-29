@@ -1,9 +1,33 @@
-div h1 {
-    display: flex;
-    justify-content: center ;
+h1 {
+    text-align: center;
 }
 
-.workingCareer {
+.dropdown {
     display: grid;
-    grid-row: 1fr 1fr 1fr;
-}
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 15px;
+    gap: 10px;
+  }
+  
+  .dropdown-header {
+    cursor: pointer;
+    background-color: #f0f0f0;
+    padding: 10px;
+  }
+  
+  .dropdown-content {
+    visibility: hidden;
+    background-color: #ffffff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-top: none;
+    height: fit-content;
+  }
+
+  .dropdown-content:not(.show) p{
+    display: none;
+  }
+
+  .dropdown-content.show {
+    visibility: visible;
+  }

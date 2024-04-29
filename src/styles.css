@@ -124,10 +124,6 @@ app-title {
 }
 
 app-sidebar {  
-    /* display: flex;
-    flex-direction:column; */
-    /* display: grid; */
-    /* grid-template-rows: 1fr auto 1fr; */
     position: relative;
     padding: 20px;
     border-right: 1px solid black;

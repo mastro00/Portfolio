@@ -1,12 +1,10 @@
 <div class="general">
     
-<div class="board">
+<!-- <div class="card">
 <div class="title">
-    <div class="row">
-        <div class="col-xs-12">
+
             <h2>Welcome</h2>
-        </div>
-    </div>
+
 </div>
 
 <div class="text">
@@ -16,15 +14,33 @@
     </p>
 </div>
     <hr>
-    <div id="buttons">
-        <button type="button" (click)="seeMore('about')">See more</button>
-        <button type="button" (click)="seeMore('contacts')">Hire me</button>
+    <div id="buttons" class="board-buttons gap30">
+        <button class="btn-17" style="height: 40px;" (click)="seeMore('/about')"><span class="text-container"><span class="text">See more</span></span></button>
+        <button class="btn-17" style="height: 40px;" (click)="seeMore('/contacts')"><span class="text-container"><span class="text">Hire me</span></span></button>      
     </div>
-    
-
 </div>
 <div class="image">
     <img src="assets/img/profile.png">
+</div> -->
+
+<div class="card">
+    <div class="card-inner">
+        
+        <div class="text">
+            <h2>Welcome</h2>
+            <p>Hello! <br>My name is Mastrangelo Giovanni</p>
+            <p>I'm a junior developer constantly looking for projects that stimulate my personal growth, 
+                I invite you to look at the rest of my experience
+            </p>
+        </div>
+        <div id="buttons" class="board-buttons gap30">
+            <button class="btn-17" style="height: 40px;" (click)="seeMore('/about')"><span class="text-container"><span class="text">See more</span></span></button>
+            <button class="btn-17" style="height: 40px;" (click)="seeMore('/contacts')"><span class="text-container"><span class="text">Hire me</span></span></button>      
+        </div>
+    </div>
 </div>
 
+<div class="image">
+    <img src="assets/img/profile.png">
+</div>
 </div>
