@@ -112,6 +112,7 @@ body {
 app-root {
     display: flex;
     height: 100%;
+    font-family: "Platypi", serif;
 }
 
 app-title {

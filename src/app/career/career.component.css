@@ -2,9 +2,22 @@ h1 {
     text-align: center;
 }
 
+.big {
+  font-size: 17px;
+}
+
 .dropdown {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    height: auto;
+    padding: 15px;
+    gap: 10px;
+  }
+
+  .dropdown2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: auto;
     padding: 15px;
     gap: 10px;
   }
@@ -22,12 +35,244 @@ h1 {
     border: 1px solid #ccc;
     border-top: none;
     height: fit-content;
+    box-shadow: 0 0 10px rgba(0,0,0,0.50);
   }
+  .dropdown-content {
+    transition: height 0.5s ease-in-out; /* Definisci la transizione per l'altezza */
+}
 
-  .dropdown-content:not(.show) p{
+.dropdown-content.closed {
+    height: 0;
+    overflow: hidden;
+}
+
+.dropdown-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out; /* Definisci la transizione per l'altezza */
+  visibility: hidden; /* Nasconde il contenuto quando chiuso */
+}
+
+.dropdown-content.show {
+  max-height: 400px; /* Imposta un'altezza massima appropriata per il tuo dropdown quando è aperto */
+  visibility: visible; /* Rendi visibile il contenuto quando aperto */
+}
+
+.dropdown-content.show {
+    visibility: visible;
+}
+
+/* test */
+
+  .dropdown-header,
+  .dropdown-header *,
+  .dropdown-header :after,
+  .dropdown-header :before,
+  .dropdown-header:after,
+  .dropdown-header:before {
+    border: 0 solid;
+    box-sizing: border-box;
+  }
+  
+  .dropdown-header {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-appearance: button;
+    background-color: #000;
+    background-image: none;
+    color: #fff;
+    cursor: pointer;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+      Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+      Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    font-size: 100%;
+    line-height: 1.5;
+    margin: 0;
+    -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+    padding: 0;
+  }
+  
+  .dropdown-header:disabled {
+    cursor: default;
+  }
+  
+  .dropdown-header:-moz-focusring {
+    outline: auto;
+  }
+  
+  .dropdown-header svg {
+    display: block;
+    vertical-align: middle;
+  }
+  
+  .dropdown-header [hidden] {
     display: none;
   }
-
-  .dropdown-content.show {
-    visibility: visible;
+  
+  .dropdown-header {
+    box-sizing: border-box;
+    display: block;
+    font-weight: 900;
+    -webkit-mask-image: none;
+    padding: 2rem 5rem;
+    perspective: 800px;
+    position: relative;
+    text-transform: uppercase;
+    transform-style: preserve-3d;
   }
+  
+  .dropdown-header span {
+    background: #fff;
+    color: #000;
+    display: grid;
+    inset: 0;
+    place-items: center;
+    position: absolute;
+    transform: rotateX(0deg);
+    transform-origin: top center;
+    transition: 0.2s;
+  }
+  
+  .dropdown-header:hover span {
+    transform: rotateX(35deg);
+  }
+  
+  .dropdown-header:after,
+  .dropdown-header:before {
+    background: #ddd;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: rotateX(0deg);
+    width: 100%;
+    z-index: -1;
+  }
+  
+  .dropdown-header:after {
+    background: #ccc;
+    width: 0;
+  }
+  
+  .dropdown-header:hover:after {
+    -webkit-animation: progress-bar 1.2s;
+    animation: progress-bar 1.2s;
+  }
+  
+  @-webkit-keyframes progress-bar {
+    0% {
+      opacity: 1;
+      width: 0;
+    }
+  
+    10% {
+      opacity: 1;
+      width: 15%;
+    }
+  
+    25% {
+      opacity: 1;
+      width: 25%;
+    }
+  
+    40% {
+      opacity: 1;
+      width: 35%;
+    }
+  
+    55% {
+      opacity: 1;
+      width: 75%;
+    }
+  
+    60% {
+      opacity: 1;
+      width: 100%;
+    }
+  
+    to {
+      opacity: 0;
+      width: 100%;
+    }
+  }
+  
+  @keyframes progress-bar {
+    0% {
+      opacity: 1;
+      width: 0;
+    }
+  
+    10% {
+      opacity: 1;
+      width: 15%;
+    }
+  
+    25% {
+      opacity: 1;
+      width: 25%;
+    }
+  
+    40% {
+      opacity: 1;
+      width: 35%;
+    }
+  
+    55% {
+      opacity: 1;
+      width: 75%;
+    }
+  
+    60% {
+      opacity: 1;
+      width: 100%;
+    }
+  
+    to {
+      opacity: 0;
+      width: 100%;
+    }
+  }
+  
+  svg {
+    width: 3.25em;
+    transform-origin: center;
+    animation: rotate4 2s linear infinite;
+   }
+   
+   circle {
+    fill: none;
+    stroke: hsl(214, 97%, 59%);
+    stroke-width: 2;
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+    stroke-linecap: round;
+    animation: dash4 1.5s ease-in-out infinite;
+   }
+   
+   @keyframes rotate4 {
+    100% {
+     transform: rotate(360deg);
+    }
+   }
+   
+   @keyframes dash4 {
+    0% {
+     stroke-dasharray: 1, 200;
+     stroke-dashoffset: 0;
+    }
+   
+    50% {
+     stroke-dasharray: 90, 200;
+     stroke-dashoffset: -35px;
+    }
+   
+    100% {
+     stroke-dashoffset: -125px;
+    }
+   }
+   
+   .wip {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
