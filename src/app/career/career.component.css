@@ -38,7 +38,7 @@ h1 {
     box-shadow: 0 0 10px rgba(0,0,0,0.50);
   }
   .dropdown-content {
-    transition: height 0.5s ease-in-out; /* Definisci la transizione per l'altezza */
+    transition: height 0.5s ease-in-out;
 }
 
 .dropdown-content.closed {
@@ -49,18 +49,19 @@ h1 {
 .dropdown-content {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.5s ease-in-out; /* Definisci la transizione per l'altezza */
-  visibility: hidden; /* Nasconde il contenuto quando chiuso */
+  transition: max-height 0.5s ease-in-out;
+  visibility: hidden;
 }
 
 .dropdown-content.show {
-  max-height: 400px; /* Imposta un'altezza massima appropriata per il tuo dropdown quando è aperto */
-  visibility: visible; /* Rendi visibile il contenuto quando aperto */
+  max-height:fit-content;
+  visibility: visible;
 }
 
-.dropdown-content.show {
-    visibility: visible;
+.dropdown-content.show p{
+  visibility: visible;
 }
+
 
 /* test */
 
@@ -271,8 +272,11 @@ h1 {
     }
    }
    
-   .wip {
+   .wip p{
     display: flex;
     align-items: center;
     justify-content: center;
    }
+
+
+   

@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { CvComponent } from '../cv/cv.component';
+
 
 @Component({
   selector: 'app-contacts',
@@ -6,9 +9,12 @@ import { Component } from '@angular/core';
   styleUrl: './contacts.component.css'
 })
 export class ContactsComponent {
-
+constructor (private matDialog: MatDialog){}
   redirectContacts(link: string) {
     window.open(link);
   }
 
+  openDialog() {
+    this.matDialog.open(CvComponent);
+  }
 }

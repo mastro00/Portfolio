@@ -10,6 +10,8 @@ import { CareerComponent } from './career/career.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { TitleComponent } from './title/title.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { CvComponent } from './cv/cv.component';
 
 @NgModule({
   declarations: [
@@ -21,10 +23,12 @@ import { TitleComponent } from './title/title.component';
     PageNotFoundComponent,
     ContactsComponent,
     TitleComponent,
+    CvComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
