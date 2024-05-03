@@ -9,6 +9,7 @@
     font-size: 19px;
     word-spacing: 0.2em; /* Regola lo spazio tra le parole */
     line-height: 1.5;
+    padding-right: 30px;
 }
 
 .icons i span{
@@ -30,6 +31,7 @@ img {
 .section1, .section2 {
     display: grid;
     gap: 10px;
+    padding-left: 20px;
 }
 
 .section1{
@@ -41,6 +43,11 @@ img {
     grid-template-columns: 1fr auto;
 }
 
+.big {
+    font-size: 21px;
+    color: #FFB114;
+  }
+  
 .links {
     padding-top: 10px;
 }

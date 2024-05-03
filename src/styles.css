@@ -11,6 +11,9 @@
     box-sizing: border-box;
 }
 
+html, body { height: 100%; }
+
+
 /* h1, h2, h3 {
     color: var(--color5)!important;
 } */
@@ -131,6 +134,11 @@ app-sidebar {
     height: 100%;
 }
 
+app-home.card {
+    justify-content: center;
+    align-items: center;
+}
+
 app-contacts {
     width: 100%;
     display: flex;
@@ -156,5 +164,4 @@ app-about {
     padding-left: 10PX;
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+

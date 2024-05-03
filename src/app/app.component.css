@@ -1,15 +1,59 @@
 .prova {
     
-    background-image: url('/assets/img/bg9.jpg');
-  background-size: cover;
-  background-position: center;
+    /* background-image: url('/assets/img/bg.jpg');
+    background-size: cover; */
+    background-position: center;
     width: 100%;
     display:grid;
     grid-template-rows: 110px 1fr;
     overflow: auto;
+    
 }
 
 .impagination {
     min-height: 100%;
 }
 
+body {
+  color: white;
+}
+
+
+/* bg */
+html {
+  height:100%;
+}
+
+body {
+  margin:0;
+}
+
+.bg {
+  animation:slide 6s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #342C2C 50%, #db3324 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:7s;
+}
+
+.bg3 {
+  animation-duration:8s;
+}
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}

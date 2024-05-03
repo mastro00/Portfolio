@@ -11,7 +11,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { TitleComponent } from './title/title.component';
 import { MatDialogModule } from '@angular/material/dialog';
-import { CvComponent } from './cv/cv.component';
+import { BgComponent } from './bg/bg.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +23,7 @@ import { CvComponent } from './cv/cv.component';
     PageNotFoundComponent,
     ContactsComponent,
     TitleComponent,
-    CvComponent,
+    BgComponent,
   ],
   imports: [
     BrowserModule,

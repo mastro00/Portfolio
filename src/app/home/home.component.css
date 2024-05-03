@@ -1,5 +1,7 @@
 .general {
     display: flex;
+    justify-content: center;
+    margin-top: 100px;
 }
 .title {
     text-align: center;
@@ -26,10 +28,12 @@ div h2 {
     line-height: 1.5;
     text-align: center;
     font-family: "Platypi", serif;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 .board-buttons {
-    margin-top: auto;
+    margin-top: 100px;
 }
 
 #buttons {
@@ -180,26 +184,16 @@ div h2 {
 }
 
 /* card */
-
-.card {
-    width: 900px;
-    height: 329px;
-    transition: all 0.2s;
-    position: relative;
-    cursor: pointer;
-    padding: 5%;
-  }
   
-  .card-inner {
-    width: inherit;
-    height: inherit;
+  .card{
+    width: auto;
+    height: 400px;
     background: rgba(255,255,255,.05);
     box-shadow: 0 0 10px rgba(0,0,0,0.25);
-    /* backdrop-filter: blur(10px); */
     border-radius: 8px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    transition: all 0.2s;
   }
   
   .card:hover {
