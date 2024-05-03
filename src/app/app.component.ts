@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { MatDialog } from '@angular/material/dialog';
-import { CvComponent } from './cv/cv.component';
+
 
 @Component({
   selector: 'app-root',

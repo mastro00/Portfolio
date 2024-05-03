@@ -41,11 +41,14 @@ img {
     grid-template-columns: 1fr auto;
 }
 
-
+.links {
+    padding-top: 10px;
+}
 
 .linkSections {
     display: flex;
     flex-direction: column;
+    padding-bottom: 15px;
 }
 
 .linkSections h2 {
