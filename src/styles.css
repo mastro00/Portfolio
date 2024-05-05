@@ -132,6 +132,8 @@ app-sidebar {
     padding: 20px;
     border-right: 1px solid black;
     height: 100%;
+    /* colore sidebar */
+    background-color: #585858;
 }
 
 app-home.card {

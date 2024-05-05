@@ -15,10 +15,14 @@ i {
     display: flex;
     width: 100%;
     flex-wrap: nowrap;
+    color:#e94c3d;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .pages li a:hover {
-    color: #555;
+    /* color: #555; */
+    color:#ffb114;
 }
 
 .pages li > a > div:has(i){

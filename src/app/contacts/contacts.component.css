@@ -167,7 +167,8 @@ hr {
   display: flex;
   align-items: center;
   border: 2px solid var(--main-color);
-  box-shadow: 4px 4px var(--main-color);
+  /* Gestisce l'ombra del pulsante */
+  /* box-shadow: 4px 4px var(--main-color); */
   background-color: var(--bg-color);
   border-radius: 10px;
   overflow: hidden;
@@ -187,7 +188,7 @@ hr {
   position: absolute;
   transform: translateX(109px);
   height: 100%;
-  width: 39px;
+  padding: 5px;
   background-color: var(--bg-color-sub);
   display: flex;
   align-items: center;
@@ -208,7 +209,7 @@ hr {
 }
 
 .button:hover .button__icon {
-  width: 148px;
+  width: 100%;
   transform: translateX(0);
 }
 
