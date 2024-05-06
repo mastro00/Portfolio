@@ -154,66 +154,49 @@ hr {
  */
 
 
- .button {
-  --main-focus: #2d8cf0;
-  --font-color: #dedede;
-  --bg-color-sub: #222;
-  --bg-color: #323232;
-  --main-color: #dedede;
+ button {
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  padding: 0.7em 2em;
+  border: 1px solid black;
+  border-radius: 2px;
   position: relative;
-  width: 150px;
-  height: 40px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  border: 2px solid var(--main-color);
-  /* Gestisce l'ombra del pulsante */
-  /* box-shadow: 4px 4px var(--main-color); */
-  background-color: var(--bg-color);
-  border-radius: 10px;
-  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+  color: black;
+  text-decoration: none;
+  transition: 0.3s ease all;
+  z-index: 1;
+  margin-top: 30px;
 }
 
-.button, .button__icon, .button__text {
-  transition: all 0.3s;
-}
-
-.button .button__text {
-  transform: translateX(21px);
-  color: var(--font-color);
-  font-weight: 600;
-}
-
-.button .button__icon {
+button:before {
+  transition: 0.5s all ease;
   position: absolute;
-  transform: translateX(109px);
-  height: 100%;
-  padding: 5px;
-  background-color: var(--bg-color-sub);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: '';
+  background-color: grey;
+  z-index: -1;
 }
 
-.button .svg {
-  width: 20px;
-  fill: var(--main-color);
+button:hover, button:focus {
+  color: white;
 }
 
-.button:hover {
-  background: var(--bg-color);
+button:hover:before, button:focus:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
 }
 
-.button:hover .button__text {
-  color: transparent;
-}
-
-.button:hover .button__icon {
-  width: 100%;
-  transform: translateX(0);
-}
-
-.button:active {
-  transform: translate(3px, 3px);
-  box-shadow: 0px 0px var(--main-color);
+button:active {
+  transform: scale(0.9);
 }

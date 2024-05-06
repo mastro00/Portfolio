@@ -133,12 +133,11 @@ app-sidebar {
     border-right: 1px solid black;
     height: 100%;
     /* colore sidebar */
-    background-color: #585858;
+    background-color: #637C86;
 }
 
-app-home.card {
-    justify-content: center;
-    align-items: center;
+app-home {
+    font-family: "Montserrat", sans-serif;
 }
 
 app-contacts {
@@ -158,12 +157,18 @@ app-contacts .cv{
     justify-content: end;
     align-items: end;
     padding: 5px;
+    font-family: "Montserrat", sans-serif;
 }
 
 app-about {
     display: flex;
     flex-direction: column;
     padding-left: 10PX;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 450;
 }
 
+app-career {
+    font-family: "Montserrat", sans-serif;
+}
 
