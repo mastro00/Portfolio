@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrl: './about.component.css'
 })
 export class AboutComponent {
+  
 
+  redirectTo(path: string) {
+    window.open(path, '_blank')
+  }
 }

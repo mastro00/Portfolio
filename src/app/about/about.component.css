@@ -7,8 +7,8 @@
 
 .paragraph p {
     font-size: 19px;
-    word-spacing: 0.2em; /* Regola lo spazio tra le parole */
-    line-height: 1.5;
+    word-spacing: 0.em;
+    line-height: 1.2;
     padding-right: 30px;
 }
 
@@ -48,8 +48,10 @@ img {
     color: #FA5B0F;
   }
   
-.links {
-    padding-top: 10px;
+div h2 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
 }
 
 .linkSections {
@@ -64,12 +66,12 @@ img {
 }
 
 #recipe {
-    background-image: url('https://i1.wp.com/potafiori.com/wp-content/uploads/2020/04/placeholder.png?ssl=1');
+    background-image: url(../../assets/img/recipe.png);
+    background-size: cover;
+    background-position: center;
     width: 350px;
     height: 250px;
     border: 1px solid black;
-    background-size: cover;
-    background-position: center;
     overflow: hidden;
     transition: width 0.3s, height 0.3s;
     cursor: pointer;
@@ -91,6 +93,8 @@ img {
     overflow: hidden;
     transition: width 0.3s, height 0.3s;
     cursor: pointer;
+    font-size: 30px;
+    text-align: center;
 }
 
 #wip:hover {
@@ -98,18 +102,10 @@ img {
     height: 270px;
 }
 
-ul {
+.cells {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding-bottom: 30px;
-    justify-items: center;
-    margin: 0px;
-    padding: 0px;
-}
-
-a {
-    display: flex;
-    font-size: 30px;
-    text-align: center;
-    text-decoration: none;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+    padding-right: 10px;
+    padding-bottom: 20px;
 }

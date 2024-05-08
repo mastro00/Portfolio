@@ -23,7 +23,7 @@ div h2 {
 }
 
 .text p {
-    font-size: 16px;
+    font-size: 18px;
     color: black;
     line-height: 1.5;
     text-align: center;
@@ -33,7 +33,7 @@ div h2 {
 }
 
 .board-buttons {
-    margin-top: 100px;
+    margin-top: 80px;
 }
 
 #buttons {

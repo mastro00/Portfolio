@@ -138,6 +138,7 @@ app-sidebar {
 
 app-home {
     font-family: "Montserrat", sans-serif;
+    
 }
 
 app-contacts {
@@ -172,3 +173,6 @@ app-career {
     font-family: "Montserrat", sans-serif;
 }
 
+app-page-not-found {
+    font-family: "Montserrat", sans-serif;
+}
